@@ -13,7 +13,7 @@ MESSAGES = []
 
 @app.route("/api/ping")
 def API_Ping():
-    global userid  # goffy ahh variable
+    global userid
     userid += 1
     USERS.append(userid)
     return str(userid)
