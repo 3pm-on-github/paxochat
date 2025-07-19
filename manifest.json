@@ -1,5 +1,5 @@
 {
     "name":"PaxoChat",
-    "access": ["gui", "web"],
+    "access": ["gui", "web", "files"],
     "icon":"icon.png"
 }

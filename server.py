@@ -8,16 +8,15 @@ import time
 app = Flask(__name__)
 
 USERS = []
-i = 0
+userid = 0
 MESSAGES = []
 
 @app.route("/api/ping")
 def API_Ping():
-    global i  # goffy ahh variable
-    i += 1
-    a = i
-    USERS.append(a)
-    return str(a)
+    global userid  # goffy ahh variable
+    userid += 1
+    USERS.append(userid)
+    return str(userid)
 
 @app.route("/api/send")
 def API_Send():
